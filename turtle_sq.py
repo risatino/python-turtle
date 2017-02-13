@@ -1,18 +1,34 @@
 import turtle
 
-screen = turtle.Screen()
-screen.bgcolor('#EF0050')
-john = turtle.Turtle()
-john.forward(100)
-john.right(90)
-john.forward(100)
-john.right(90)
-john.forward(100)
-john.right(90)
-john.forward(100)
-john.right(90)
+s = turtle.Screen()
+s.bgcolor('#7EC0EE')
+turtle.color('#FF3366')
 
-jackie = turtle.Turtle()
-jackie.circle(30)
+pizza = turtle.Turtle()
+pizza.color('#FF3366')
+
+def drawSquares(john, size, num, angle):
+
+    for i in range(num):
+        for x in range(4):
+            pizza.forward(size)
+            pizza.left(90)
+        pizza.right(angle)
+
+drawSquares(pizza, 125, 36, -10)
 
 screen.exitonclick()
+
+# turtle.forward(100)
+# turtle.right(90)
+# turtle.forward(100)
+# turtle.right(90)
+# turtle.forward(100)
+# turtle.right(90)
+# turtle.forward(100)
+# turtle.right(90)
+# turtle.right(-10)
+
+# sun = turtle.Turtle()
+# sun.color('#FFCC00')
+# sun.circle(15)
