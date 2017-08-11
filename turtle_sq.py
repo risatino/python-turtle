@@ -17,7 +17,7 @@ def drawSquares(john, size, num, angle):
 
 drawSquares(pizza, 125, 36, -10)
 
-screen.exitonclick()
+s.exitonclick()
 
 # turtle.forward(100)
 # turtle.right(90)
