@@ -7,12 +7,12 @@ turtle.color('#FF3366')
 pizza = turtle.Turtle()
 pizza.color('#FF3366')
 
-def drawSquares(john, size, num, angle):
+def drawSquares(name, size, num, angle):
 
     for i in range(num):
         for x in range(4):
             pizza.forward(size)
-            pizza.left(90)
+            pizza.left(45)
         pizza.right(angle)
 
 drawSquares(pizza, 125, 36, -10)
